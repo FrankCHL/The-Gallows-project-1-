@@ -55,6 +55,7 @@ public class Menu {
                     System.out.print(unknowWord[i]);
                 }
                 while (true) {
+                    System.out.println('\n');
                     String input = sc.next();
                     if (input.matches("[а-яА-Я]")) {
                         mistakeCount += newGame.SearchForLetter(input.charAt(0), unknowWord, usedLetters);
