@@ -58,7 +58,7 @@ public class Menu {
                     System.out.println('\n');
                     String input = sc.next();
                     if (input.matches("[а-яА-Я]")) {
-                        mistakeCount += newGame.SearchForLetter(input.charAt(0), unknowWord, usedLetters);
+                        mistakeCount += newGame.SearchForLetter(input.toLowerCase().charAt(0), unknowWord, usedLetters);
                         break;
                     } else {
                         System.out.println("Введена латинская буква,число или спецсимвол, повторите ввод\n");

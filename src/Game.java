@@ -16,10 +16,10 @@ public class Game {
         boolean found = false;
         if (usedLetters.indexOf(String.valueOf(letter)) == -1) {
             usedLetters.append(letter);
-        }
+        } else found = true;
         for (int i = 0; i < word.length(); i++) {
 
-            if (word.charAt(i) == letter || word.toUpperCase().charAt(i) == letter) {
+            if (word.charAt(i) == letter) {
                 unknownWord[i] = word.charAt(i);
                 found = true;
             }
