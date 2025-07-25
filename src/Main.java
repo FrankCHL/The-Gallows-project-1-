@@ -2,7 +2,9 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Menu menu = new Menu();
-        menu.MenuInterface();
+        WordManager wordManager = new WordManager();
+        GameMenu gameMenu = new GameMenu();
+
+        gameMenu.start(wordManager);
     }
 }
